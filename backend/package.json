@@ -8,11 +8,12 @@
   },
   "license": "MIT",
   "dependencies": {
-    "body-parse": "^1.15.2",
+    "body-parser": "^1.15.2",
     "express": "4.14.0",
     "express-query-int": "1.0.1",
     "lodash": "4.17.4",
-    "mongoose": "4.7.0",
+    "mongodb": "3.0.0",
+    "mongoose": "5.0.15",
     "mongoose-paginate": "5.0.3",
     "node-restful": "0.2.5",
     "pm2": "2.1.5"
