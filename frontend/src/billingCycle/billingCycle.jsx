@@ -20,7 +20,7 @@ class BillingCycle extends Component {
                             <TabHeader label='Excluir' icon='trash-o' target='tabDelete' />
                         </TabsHeader>
                         <TabsContent >
-
+                            
                         </TabsContent>
                     </Tabs>
                 </Content>
