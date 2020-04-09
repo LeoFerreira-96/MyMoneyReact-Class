@@ -14,7 +14,7 @@ class BillingCycleList extends Component {
         return list.map(bc => (
             <tr key={bc.id}>
                 <td>{bc.name}</td>
-                <td>{bc.mount}</td>
+                <td>{bc.month}</td>
                 <td>{bc.year}</td>
             </tr>
         ))
