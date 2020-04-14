@@ -22,9 +22,9 @@ class Dashboard extends Component {
                 <ContentHeader title='Dashboard' small='Versão 1.0' />
                 <Content>
                     <Row>
-                        <ValueBox cols='12 4' color='green' icon='bank' value={`${credit.toLocaleString('pt-BR', { minimumFractionDigits: 2, style: 'currency', currency: 'BRL' })}`} text='Total de Receita' />
-                        <ValueBox cols='12 4' color='red' icon='credit-card' value={` ${debt.toLocaleString('pt-BR', { minimumFractionDigits: 2, style: 'currency', currency: 'BRL' })}`} text='Total de Despesas' />
-                        <ValueBox cols='12 4' color='blue' icon='money' value={`${(credit - debt).toLocaleString('pt-BR', { minimumFractionDigits: 2, style: 'currency', currency: 'BRL' })}`} text='Valor Consolidado' />
+                        <ValueBox cols='12 4' color='green' icon='bank' value={`${(credit ? credit: 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, style: 'currency', currency: 'BRL' })}`} text='Total de Receita' />
+                        <ValueBox cols='12 4' color='red' icon='credit-card' value={` ${(debt ? debt :0).toLocaleString('pt-BR', { minimumFractionDigits: 2, style: 'currency', currency: 'BRL' })}`} text='Total de Despesas' />
+                        <ValueBox cols='12 4' color='blue' icon='money' value={`${((credit ? credit : 0) - (debt ? debt :0)).toLocaleString('pt-BR', { minimumFractionDigits: 2, style: 'currency', currency: 'BRL' })}`} text='Valor Consolidado' />
                     </Row>
                 </Content>
             </div>
